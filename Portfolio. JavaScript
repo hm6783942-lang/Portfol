@@ -1,0 +1,39 @@
+// Small interactive bits: mobile menu + smooth scroll
+document.addEventListener('DOMContentLoaded', function () {
+  // Mobile menu toggle
+  const menuBtn = document.getElementById('menu-btn');
+  const nav = document.querySelector('.nav');
+  if (menuBtn) {
+    menuBtn.addEventListener('click', () => {
+      if (nav.style.display === 'flex') {
+        nav.style.display = 'none';
+      } else {
+        nav.style.display = 'flex';
+        nav.style.flexDirection = 'column';
+        nav.style.background = '#0f172a';
+        nav.style.padding = '10px';
+        nav.style.position = 'absolute';
+        nav.style.right = '16px';
+        nav.style.top = '64px';
+        nav.style.borderRadius = '8px';
+      }
+    });
+  }
+
+  // Smooth scroll for internal links
+  const links = document.querySelectorAll('a[href^="#"]');
+  links.forEach(link => {
+    link.addEventListener('click', function (e) {
+      const targetId = this.getAttribute('href');
+      if (targetId.length > 1) {
+        e.preventDefault();
+        const el = document.querySelector(targetId);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+        // close mobile nav after click
+        if (window.innerWidth <= 820 && nav) nav.style.display = 'none';
+      }
+    });
+  });
+});

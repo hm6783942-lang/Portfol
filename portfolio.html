@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hassan Mushtaq — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>Hassan Mushtaq</h1>
+        <p class="subtitle">Frontend Web Developer — HTML • CSS • JavaScript</p>
+      </div>
+
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button id="menu-btn" class="menu-btn" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h2>Hi — I'm Hassan</h2>
+          <p>Frontend developer from Rawalpindi. I build responsive  and small web apps using HTML, CSS and JavaScript.</p>
+          <a class="btn" href="#projects">See my work</a>
+        </div>
+        <div class="hero-image">
+          <img src="profile.png" alt="Hassan Mushtaq - Portfolio Profile Picture">
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h2 class="section-title">About Me</h2>
+      <p>I live in Rawalpindi (Afshan Colony, Imran Street 3). I focus on clean, accessible front-end development and enjoy transforming designs into working websites.</p>
+      <ul class="skills-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="section projects container">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Portfolio Website</h3>
+          <p>My personal site (this project) — responsive layout, clean UI and contact links.</p>
+          <a class="btn small" href="#" target="_blank" rel="noopener">View Live</a>
+          <a class="btn outline small" href="#" target="_blank" rel="noopener">View Code</a>
+        </article>
+
+        <article class="card">
+          <h3>Minecraft Page</h3>
+          <p>Website for my Minecraft page — list of builds, server info, and community links. Built with HTML/CSS/JS.</p>
+          <a class="btn small" href="#" target="_blank" rel="noopener">View Live</a>
+          <a class="btn outline small" href="#" target="_blank" rel="noopener">View Code</a>
+        </article>
+
+        <article class="card">
+          <h3>To-Do App (JS)</h3>
+          <p>Small task manager built with vanilla JavaScript and localStorage for persistence.</p>
+          <a class="btn small" href="#" target="_blank" rel="noopener">View Live</a>
+          <a class="btn outline small" href="#" target="_blank" rel="noopener">View Code</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="resume" class="section container">
+      <h2 class="section-title">Resume</h2>
+      <p>You can download my resume below.</p>
+      <a class="btn" href="resume.pdf" download>Download Resume (PDF)</a>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2 class="section-title">Contact</h2>
+      <p>Email: <a href="mailto:hm6783942@gmail.com">hm6783942@gmail.com</a></p>
+      <p>Location: Rawalpindi — Afshan Colony, Imran Street 3</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Hassan Mushtaq — Built with HTML, CSS & JavaScript</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
